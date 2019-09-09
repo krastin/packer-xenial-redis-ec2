@@ -1,4 +1,4 @@
-# packer-xenial-flask-ec2
+# packer-xenial-redis-ec2
 An EC2 AMI based on ubuntu xenial with Redis
 
 # Prerequisites

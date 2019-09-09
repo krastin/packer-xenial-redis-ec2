@@ -36,7 +36,7 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
@@ -56,7 +56,7 @@
         "most_recent": true
       },      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
@@ -76,7 +76,7 @@
         "most_recent": true
       },      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
@@ -96,7 +96,7 @@
         "most_recent": true
       },      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
@@ -116,7 +116,7 @@
         "most_recent": true
       },      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
@@ -136,7 +136,7 @@
         "most_recent": true
       },      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "krastin-xenial-flask-{{timestamp}}",
+      "ami_name": "krastin-xenial-redis-{{timestamp}}",
       "tags": {
         "OS Version": "Ubuntu",
         "Release": "Latest"
