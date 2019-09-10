@@ -4,25 +4,13 @@
 
 apt-get update
 
-# Hide Ubuntu splash screen during OS Boot, so you can see if the boot hangs
-apt-get remove -y plymouth-theme-ubuntu-text
-sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT=""/' /etc/default/grub
-update-grub
-
 # Add no-password sudo config for vagrant user
-useradd vagrant
-echo "%vagrant ALL=NOPASSWD:ALL" > /etc/sudoers.d/vagrant
-chmod 0440 /etc/sudoers.d/vagrant
+useradd redis
+echo "%redis ALL=NOPASSWD:ALL" > /etc/sudoers.d/redis
+chmod 0440 /etc/sudoers.d/redis
 
-# Add vagrant to sudo group
-usermod -a -G sudo vagrant
-
-# Install vagrant key
-mkdir /home/vagrant/.ssh
-chmod 700 /home/vagrant/.ssh
-wget --no-check-certificate 'https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys
-chmod 600 /home/vagrant/.ssh/authorized_keys
-chown -R vagrant /home/vagrant/.ssh
+# Add flask to sudo group
+usermod -a -G sudo redis
 
 # Install NFS
 apt-get install -y nfs-common
